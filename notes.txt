@@ -1,0 +1,2 @@
+tail = str[start_index:];
+print(tail);
