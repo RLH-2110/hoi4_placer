@@ -35,7 +35,7 @@ This program searches your mod for `.cng` files and parses them.
 The program will copy the original file from Vanilla or a mod, and then add or replace part of the copy with [regex](https://regextutorial.org/).  
 
 For more info, see the documentation.
-> [!INFO]
+> [!NOTE]
 > The documentation still needs to be written
 
 # Q&A
