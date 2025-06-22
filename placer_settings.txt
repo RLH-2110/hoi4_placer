@@ -1,0 +1,4 @@
+VANNILA=D:\SteamLibrary\steamapps\common\Hearts of Iron IV
+EAW=D:\SteamLibrary\steamapps\workshop\content\394360\1826643372
+MAX_FILESIZE=10485760
+
