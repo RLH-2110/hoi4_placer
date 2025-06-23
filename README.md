@@ -16,7 +16,7 @@ Just place this into your mod folder, create the `.cng` files for files you want
 	* Windows: use the Microsoft store and search for python, or download it [here](https://www.python.org/downloads/)
 	* Linux with apt: open a terminal and enter these commands: `sudo apt update` and `sudo apt install python3` 
 	* Other: Use Google. You may feel free to write a Pull Request to append your instructions here.
-2. Download `placer.py` and `player_settings.txt` into your mod folder
+2. Download `placer.py`, `parser.py` and `player_settings.txt` into your mod folder
 3. create the necessary `.cng` files
 4. edit `placer_settings.txt` to change or create variables that point at vanilla and parent mods.
 5. double click placer.py or open a console to run `python3 placer.py` or `python placer.py`
@@ -64,12 +64,13 @@ Yes, this program is under a CC0-1.0 Licence, you can do whatever you want with 
 
 # Project Structure
 
-| File/Directory      | Description                                    |
-|---------------------|------------------------------------------------|
-| LICENCE             | cc0-1.0 Licence file.                          |
-| README.md           | This README file.                              |
-| placer.py           | The program that is run.                       |
-| placer_settings.txt | The config file for placer.py                  |
-| *tests/*            | Directory for automated tests                  |
-| *_tests/*           | Directory for manual tests in development.     |
-| *examples/*         | Example files with instructions to show usage. |
+| File/Directory      | Description                                          |
+|---------------------|------------------------------------------------------|
+| LICENCE             | cc0-1.0 Licence file.                                |
+| README.md           | This README file.                                    |
+| placer.py           | The program that is run.                             |
+| parser.py           | The program part responsible  for parsing each file. |
+| placer_settings.txt | The config file for placer.py                        |
+| *tests/*            | Directory for automated tests                        |
+| *_tests/*           | Directory for manual tests in development.           |
+| *examples/*         | Example files with instructions to show usage.       |

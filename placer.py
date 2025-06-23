@@ -3,6 +3,7 @@ import os
 import re as regex
 from dataclasses import dataclass as struct
 from enum import Enum as enum
+from parser import parse_file
 
 ### structs and enums
 
@@ -123,7 +124,7 @@ def read_config() -> bool:
 				i = i + 1;
 				continue;
 			else:
-				print("Error: Line "+str(i+1)+" in "+settingsFile + " has a syntax errro!");
+				print("Error: Line "+str(i+1)+" in "+settingsFile + " has a syntax error!");
 		i = i + 1;
 
 	fd.close();
@@ -175,7 +176,6 @@ def get_file_prio(path) -> int:
 
 # gets a list of all files and oders them by priority, stores the result in cngFiles
 def load_file_prios():
-	print("TODO: update this load_file_prios")
 	for file in get_files():
 		prio = get_file_prio(file);
 		if (prio is None):
@@ -185,12 +185,7 @@ def load_file_prios():
 
 	cngFiles.sort();
 
-# parses a file and executes the commands within that file
-# path: path to the file
-# returns: True on success, False on Failure
-def parse_file(path) -> bool:
-	print("TODO IMPLEMENT! FILE: "+path);
-	return True;
+
 
 ### main
 
@@ -212,4 +207,7 @@ set_default("DEFAULT_TYPE",DEFAULT_TYPE);
 load_file_prios();
 
 print(cngFiles);
+
+for file in cngFiles:
+	parse_file(file[1]);
 
